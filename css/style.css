@@ -3642,16 +3642,6 @@ p + .quote-classic {
 	margin-bottom: 0;
 }
 
-.snackbars-right {
-	display: inline-block;
-	float: right;
-	text-transform: uppercase;
-}
-
-.snackbars-right:hover {
-	text-decoration: underline;
-}
-
 @media (min-width: 576px) {
 	.snackbars {
 		max-width: 540px;
@@ -9115,10 +9105,11 @@ html.rd-navbar-fixed-linked .page {
 	touch-action: pan-x;
 }
 
-/* Coverflow */
+
+/* Coverflow 
 .swiper-container-coverflow .swiper-wrapper {
-	/* Windows 8 IE 10 fix */
-}
+	/* Windows 8 IE 10 fix
+}*/
 
 .swiper-container-fade.swiper-container-free-mode .swiper-slide {
 	transition-timing-function: ease-out;
