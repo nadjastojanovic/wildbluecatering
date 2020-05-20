@@ -112,6 +112,8 @@ body {
 	letter-spacing: .05em;
 }
 
+
+
 h1, h2, h3, h4, h5, h6, [class^='heading-'] {
 	margin-top: 0;
 	margin-bottom: 0;
@@ -3518,6 +3520,7 @@ p + .quote-classic {
 	padding: 10px 0;
 	margin-left: -17px;
 	margin-right: -17px;
+	text-align: center;
 }
 
 .breadcrumbs-custom-path > * {
@@ -6501,8 +6504,7 @@ html:not(.lt-ie10) .not-animated {
 	justify-content: center;
 	align-items: center;
 	padding: 20px;
-	background: #ffffff;
-	transition: .3s all ease;
+	display: none;
 }
 
 .preloader.loaded {
@@ -7125,6 +7127,25 @@ html.tablet .ui-to-top {
 	font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 	color: #2c343b;
 	transition: all .25s;
+}
+
+
+.rd-nav-featured {
+	background-color: #7FB3DE;
+	padding: 5px 32px;
+	margin-top: 7px;
+	border-radius: 5px;
+}
+
+.rd-nav-featured a:hover{
+	color: white !important;
+}
+
+@media (max-width: 991px) {
+	.rd-nav-featured {
+		padding: 0 !important;
+		border-radius: 0;
+	}
 }
 
 .rd-navbar-static .rd-nav-link::before {
@@ -9021,6 +9042,21 @@ html.rd-navbar-fixed-linked .page {
 	z-index: 1;
 }
 
+.swiper-small {
+	width: 80% !important;
+	margin-top: 100px;
+}
+
+.covid-text {
+	width: 70%;
+	font-size: 20px;
+	margin: auto;
+}
+
+.swiper-title-small {
+	font-size: 40px;
+}
+
 .swiper-container-no-flexbox .swiper-slide {
 	float: left;
 }
@@ -9134,6 +9170,7 @@ html.rd-navbar-fixed-linked .page {
 		transform: rotate(360deg);
 	}
 }
+
 
 .swiper-slide > .vide__body,
 .swiper-slide > .parallax_cnt {

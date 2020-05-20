@@ -645,7 +645,7 @@
 		if (plugins.copyrightYear.length) {
 			plugins.copyrightYear.text(initialDate.getFullYear());
 		}
-
+		
 		// Page loader
 		if (plugins.preloader.length) {
 			loaderTimeoutId = setTimeout(function () {
