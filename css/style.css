@@ -8583,12 +8583,12 @@ html.rd-navbar-fixed-linked .page {
 }
 
 .rd-navbar-modern.rd-navbar-static .rd-nav-item + .rd-nav-item {
-	margin-left: 5px;
+	margin-left: 15px;
 }
 
 @media (min-width: 1200px) {
 	.rd-navbar-modern.rd-navbar-static .rd-nav-item + .rd-nav-item {
-		margin-left: 55px;
+		margin-left: 25px;
 	}
 }
 
