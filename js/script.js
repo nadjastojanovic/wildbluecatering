@@ -671,7 +671,7 @@
 		if (isDesktop && !isNoviBuilder) {
 			$().UItoTop({
 				easingType: 'easeOutQuad',
-				containerClass: 'ui-to-top mdi mdi-arrow-up'
+				containerClass: 'ui-to-top fas fa-arrow-up'
 			});
 		}
 
@@ -1005,7 +1005,7 @@
 										.done(function (responceCode) {
 											if (responceCode !== 'CPT000') {
 												if (output.hasClass("snackbars")) {
-													output.html('<p><span class="icon text-middle mdi mdi-check icon-xxs"></span><span>' + captchaMsg[responceCode] + '</span></p>')
+													output.html('<p><span class="icon text-middle fas fa-check icon-xxs"></span><span>' + captchaMsg[responceCode] + '</span></p>')
 
 													setTimeout(function () {
 														output.removeClass("active");
@@ -1070,13 +1070,13 @@
 
 						if (result === "MF000") {
 							if (output.hasClass("snackbars")) {
-								output.html('<p><span class="icon text-middle mdi mdi-check icon-xxs"></span><span>' + msg[result] + '</span></p>');
+								output.html('<p><span class="icon text-middle  fas fa-check icon-xxs"></span><span>' + msg[result] + '</span></p>');
 							} else {
 								output.addClass("active success");
 							}
 						} else {
 							if (output.hasClass("snackbars")) {
-								output.html(' <p class="snackbars-left"><span class="icon icon-xxs mdi mdi-alert-outline text-middle"></span><span>' + msg[result] + '</span></p>');
+								output.html(' <p class="snackbars-left"><span class="icon icon-xxs fas fa-exclamation-triangle text-middle"></span><span>' + msg[result] + '</span></p>');
 							} else {
 								output.addClass("active error");
 							}

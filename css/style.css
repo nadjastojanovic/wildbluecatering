@@ -96,6 +96,7 @@ html p a:hover {
 * Typography
 */
 body {
+	overflow-x: hidden;
 	font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 	font-size: 15px;
 	line-height: 1.6;
@@ -112,16 +113,15 @@ body {
 	letter-spacing: .05em;
 }
 
-
-
 h1, h2, h3, h4, h5, h6, [class^='heading-'] {
 	margin-top: 0;
 	margin-bottom: 0;
 	font-weight: 500;
 	letter-spacing: .1em;
 	text-transform: uppercase;
-	font-family: "Asfalto";
+	font-family: "Fredericka the Great";
 	color: #151515;
+	text-align: center;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, [class^='heading-'] a {
@@ -410,7 +410,7 @@ a[href*='tel'], a[href*='mailto'] {
 	line-height: 1.3;
 	letter-spacing: .2em;
 	text-transform: uppercase;
-	font-family: "Asfalto";
+	font-family: "Fredericka the Great";
 	color: #ffffff;
 }
 
@@ -512,6 +512,7 @@ a[href*='tel'], a[href*='mailto'] {
 	height: 70px;
 	width: 70px;
 	margin-top: 4px;
+	padding-top: 20px;
 	font-size: 30px;
 	line-height: 70px;
 	color: #151515;
@@ -626,6 +627,8 @@ a[href*='tel'], a[href*='mailto'] {
 	line-height: 55px;
 	color: #7FB3DE;
 	transition: color ease .25s;
+	text-align: center;
+	width: 100%;
 }
 
 .box-icon-megan-icon.icon-46 {
@@ -706,16 +709,12 @@ a[href*='tel'], a[href*='mailto'] {
 	color: #151515;
 }
 
-.box-icon-minimal .linearicons-medal-empty {
-	font-size: 48px;
-}
-
 .box-icon-minimal-title {
 	font-size: 18px;
 	line-height: 1.33;
 	font-weight: 500;
 	letter-spacing: .1em;
-	font-family: "Asfalto";
+	font-family: "Fredericka the Great";
 	color: #151515;
 }
 
@@ -740,6 +739,7 @@ a[href*='tel'], a[href*='mailto'] {
 	letter-spacing: .05em;
 	font-weight: 400;
 	text-transform: none;
+	text-align: left;
 }
 
 .cta-modern-title-2 {
@@ -3550,7 +3550,6 @@ p + .quote-classic {
 
 .breadcrumbs-custom-path li::after {
 	position: absolute;
-	content: "";
 	top: 46%;
 	right: -8px;
 	display: inline-block;
@@ -3690,6 +3689,7 @@ p + .quote-classic {
 	font-weight: 700;
 	letter-spacing: .05em;
 	text-transform: none;
+	text-align: left;
 }
 
 .footer-modern-list {
@@ -3731,6 +3731,24 @@ p + .quote-classic {
 
 .footer-modern-title + * {
 	margin-top: 20px;
+}
+
+@media (max-width: 576px) {
+	.footer-modern-title {
+		text-align: center;
+	}
+	.footer-modern-list {
+		text-align: center;
+		margin: auto;
+		width: 100%;
+	}
+	footer .brand {
+		text-align: center;
+		width: 100%;
+	}
+	.footer-modern-line-3 {
+		text-align: center;
+	}
 }
 
 @media (min-width: 576px) {
@@ -3799,22 +3817,6 @@ p + .quote-classic {
 	z-index: 1;
 }
 
-.footer-social-list .icon::after {
-	display: inline-block;
-	position: absolute;
-	content: '';
-	top: 50%;
-	left: 50%;
-	width: 150%;
-	height: 150%;
-	background: #FFE28A;
-	transform-origin: 0 0;
-	transform: rotate(45deg) translate3d(-50%, 50%, 0);
-	transition: all 0.35s cubic-bezier(0.05, 0.29, 0.11, 1.54);
-	pointer-events: none;
-	z-index: -1;
-}
-
 .footer-social-list .icon:focus::after, .footer-social-list .icon:hover::after {
 	transform: rotate(45deg) translate3d(-50%, -50%, 0);
 }
@@ -3825,14 +3827,6 @@ p + .quote-classic {
 
 .footer-social-list a:hover {
 	color: #151515;
-}
-
-.footer-social-list .mdi-google-plus {
-	font-size: 24px;
-}
-
-.footer-social-list-2 .icon::after {
-	background: #7FB3DE;
 }
 
 .footer-social-list-2 a:hover {
@@ -4151,6 +4145,7 @@ hr + .footer-social-list {
 	position: relative;
 	height: 63px;
 	width: 63px;
+	padding-top: 20px;
 	font-size: 34px;
 	line-height: 63px;
 	border-radius: 50%;
@@ -4458,10 +4453,6 @@ hr + .footer-social-list {
 
 .team-modern-social-list .icon:hover {
 	background: #7FB3DE;
-}
-
-.team-modern-social-list .mdi-google-plus {
-	font-size: 18px;
 }
 
 .team-modern-social-list a, .team-modern-social-list a:focus, .team-modern-social-list a:active {
@@ -5796,6 +5787,7 @@ html [class*='section-'].section-top-0 {
 .desktop .oh-desktop {
 	position: relative;
 	overflow: hidden;
+
 }
 
 p.rights {
@@ -6018,7 +6010,6 @@ p.rights a:hover {
 .aside-contacts span.icon {
 	vertical-align: middle;
 	font-size: 20px;
-	color: #7FB3DE;
 }
 
 .aside-contacts a {
@@ -6494,7 +6485,6 @@ html:not(.lt-ie10) .not-animated {
 	justify-content: center;
 	align-items: center;
 	padding: 20px;
-	display: none;
 }
 
 .preloader.loaded {
@@ -6753,6 +6743,41 @@ html:not(.lt-ie10) .not-animated {
 	}
 }
 
+#photos .row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+#photos .column {
+	flex: 25%;
+	max-width: 25%;
+	padding: 0 4px;
+}
+
+#photos .column img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+	#photos .column {
+		flex: 50%;
+		max-width: 50%;
+	}
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+	#photos .column {
+		flex: 100%;
+		max-width: 100%;
+	}
+}
+
 /*
 *
 * ToTop
@@ -6773,7 +6798,7 @@ html:not(.lt-ie10) .not-animated {
 	text-decoration: none;
 	border-radius: 50%;
 	transition: .3s all ease-in-out;
-	transform: translate3d(0, 100px, 0);
+	padding-top: 15px;
 }
 
 .ui-to-top:focus, .ui-to-top:hover {
@@ -8558,7 +8583,7 @@ html.rd-navbar-fixed-linked .page {
 }
 
 .rd-navbar-modern.rd-navbar-static .rd-nav-item + .rd-nav-item {
-	margin-left: 40px;
+	margin-left: 30px;
 }
 
 @media (min-width: 1200px) {
@@ -8719,14 +8744,6 @@ html.rd-navbar-fixed-linked .page {
 
 .list-share-2 .icon:hover {
 	background: #7FB3DE;
-}
-
-.list-share-2 .mdi-google-plus {
-	font-size: 19px;
-}
-
-.list-share-2 .mdi-facebook {
-	font-size: 16px;
 }
 
 .list-share-2 a, .list-share-2 a:focus, .list-share-2 a:active {
@@ -9598,6 +9615,7 @@ html.rd-navbar-fixed-linked .page {
 
 .swiper-slider-2 .swiper-title {
 	font-weight: 700;
+	text-align: left;
 }
 
 .swiper-slider-2 .swiper-text {
@@ -9650,10 +9668,6 @@ html.rd-navbar-fixed-linked .page {
 	height: inherit;
 }
 
-.swiper-slider-2 .swiper-button-arrow::before {
-	font-family: "Material Design Icons";
-}
-
 .swiper-slider-2 .swiper-button-arrow::after {
 	display: inline-block;
 	position: absolute;
@@ -9678,10 +9692,6 @@ html.rd-navbar-fixed-linked .page {
 	padding-right: 10px;
 }
 
-.swiper-slider-2 .swiper-button-prev .swiper-button-arrow:before {
-	content: "\f14a";
-}
-
 .swiper-slider-2 .swiper-button-prev .swiper-button-arrow::after {
 	transform: skew(10deg);
 }
@@ -9692,10 +9702,6 @@ html.rd-navbar-fixed-linked .page {
 
 .swiper-slider-2 .swiper-button-next .swiper-button-arrow {
 	padding-left: 10px;
-}
-
-.swiper-slider-2 .swiper-button-next .swiper-button-arrow:before {
-	content: "\f14f";
 }
 
 .swiper-slider-2 .swiper-button-next .swiper-button-arrow::after {
@@ -10775,7 +10781,7 @@ html .page .offset-top-10 {
 }
 
 .isotope-filters-modern .inline-list > li {
-	font-family: "Asfalto";
+	font-family: "Fredericka the Great";
 	font-size: 18px;
 }
 
@@ -10897,7 +10903,7 @@ html .page .offset-top-10 {
 	font-weight: 500;
 	letter-spacing: .1em;
 	text-transform: uppercase;
-	font-family: "Asfalto";
+	font-family: "Fredericka the Great";
 	color: #777777;
 	background: #ffffff;
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17);
@@ -11011,7 +11017,7 @@ html .page .offset-top-10 {
 	border-radius: 0;
 	border: 0;
 	color: #777777;
-	font-family: "Asfalto";
+	font-family: "Fredericka the Great";
 }
 
 .tabs-custom .nav-link.active {
@@ -13986,28 +13992,6 @@ Version: 3.5.4 Timestamp: Sun Aug 30 13:30:32 EDT 2015
 	border-bottom-right-radius: 0;
 }
 
-.select2-arrow {
-	display: inline-block;
-	position: absolute;
-	right: 14px;
-	top: 50%;
-	transform: translateY(-50%);
-	line-height: 1;
-}
-
-.select2-arrow b:before {
-	display: inline-block;
-	font-weight: 400;
-	content: "";
-	font-family: "Material Design Icons";
-	font-size: 20px;
-	transform: rotate(0deg);
-}
-
-.select2-dropdown-open .select2-arrow b:before {
-	transform: rotate(180deg);
-}
-
 .select2-container .select2-choice abbr {
 	display: none;
 }
@@ -14191,12 +14175,6 @@ disabled look for disabled choices in the results dropdown
 	background-image: none;
 	border: 1px solid #ddd;
 	cursor: default;
-}
-
-.select2-container.select2-container-disabled .select2-choice .select2-arrow {
-	background-color: #f4f4f4;
-	background-image: none;
-	border-left: 0;
 }
 
 .select2-container.select2-container-disabled .select2-choice abbr {
